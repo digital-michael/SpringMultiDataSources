@@ -1,4 +1,4 @@
-package com.digitalmichael.smds.springmultidatasources.audit.dto;
+package com.digitalmichael.smds.springmultidatasources.log.dto;
 
 import com.digitalmichael.smds.springmultidatasources.common.AbstractDao;
 import jakarta.persistence.*;
@@ -8,8 +8,8 @@ import org.springframework.lang.NonNull;
 
 import java.util.Objects;
 
-@Profile( {"all","audit"})
-@Entity(name = "audit_entries")
+@Profile( {"default","all","log"})
+@Entity(name = "log_entries")
 public class Entry extends AbstractDao {
 
     @Id

@@ -3,10 +3,12 @@ package com.digitalmichael.smds.springmultidatasources.augment.dto;
 import com.digitalmichael.smds.springmultidatasources.common.AbstractDao;
 import jakarta.persistence.*;
 import org.apache.logging.log4j.util.Strings;
+import org.springframework.context.annotation.Profile;
 import org.springframework.lang.NonNull;
 
 import java.util.Objects;
 
+@Profile( {"all","augment"} )
 @Entity(name = "augment_entries")
 public class Entry extends AbstractDao {
 

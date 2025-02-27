@@ -1,12 +1,12 @@
-package com.digitalmichael.smds.springmultidatasources.audit;
+package com.digitalmichael.smds.springmultidatasources.log;
 
-import com.digitalmichael.smds.springmultidatasources.audit.dto.Entry;
+import com.digitalmichael.smds.springmultidatasources.log.dto.Entry;
 import org.springframework.context.annotation.Profile;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 
-@Profile( {"all","audit"})
-@org.springframework.stereotype.Repository(value = "AuditRepository")
+@Profile( {"default","all","log"})
+@org.springframework.stereotype.Repository(value = "LogtRepository")
 interface Repository extends JpaRepository<Entry, Long>, JpaSpecificationExecutor<Entry> {
 }
