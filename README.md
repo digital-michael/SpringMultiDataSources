@@ -18,7 +18,7 @@ class
 - dataSource() files to create a connection, interrupted necessary operations
 - Focus Package: config
 - Focus Classes: AuditConfig, AugmentConfig, AbstractDataSourceConfig
-- Focus method: dataSource()
+- Focus method: AbstractDataSourceConfig.dataSource()
 
 # Interesting Tech
 - abstract dto class AbstractDao : tested in other code bases and appears to work reliably
