@@ -54,8 +54,6 @@ public class AuditConfig extends AbstractDataSourceConfig {
         System.out.println("reading from: " + DATASOURCE_PREFIX);
     }
 
-
-
     //STATUS: tested and appears to be working fine.
     @Bean( name = JPA_BEAN )
     @ConfigurationProperties(prefix = JPA_PREFIX)
